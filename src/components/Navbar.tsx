@@ -10,106 +10,136 @@ const Navbar = () => {
   const navItems = [
     { name: "Home", path: "/" },
     { name: "Sobre Nós", path: "/sobre" },
-    { name: "Produtos", path: "/produtos" },
-    { name: "Processo", path: "/processo" },
+    { name: "Mineração", path: "/processo" },
     { name: "Venda a Peso", path: "/venda-peso" },
+    { name: "Produtos", path: "/produtos" },
     { name: "Portfólio", path: "/portfolio" },
+    { name: "Localização", path: "/localizacao" },
     { name: "Contato", path: "/contato" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-primary shadow-strong">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 bg-ochre rounded flex items-center justify-center font-heading font-bold text-2xl text-primary transition-smooth group-hover:shadow-glow">
-              PS
-            </div>
-            <div className="hidden md:block">
-              <div className="font-heading font-bold text-xl text-primary-foreground">
-                Pedreira Serrana
-              </div>
-              <div className="text-xs text-ochre uppercase tracking-wider">
-                Desde 1978
-              </div>
-            </div>
-          </Link>
-
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                className={`px-4 py-2 rounded font-heading font-medium text-sm transition-smooth ${
-                  isActive(item.path)
-                    ? "bg-ochre text-primary"
-                    : "text-primary-foreground hover:bg-stone-dark hover:text-ochre"
-                }`}
+    <>
+      {/* Top Bar */}
+      <div className="bg-stone-900 text-white py-2 text-xs md:text-sm">
+        <div className="container mx-auto px-4">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
+            <p>
+              PEDREIRA SERRANA | HÁ 47 ANOS TRABALHANDO PELO DESENVOLVIMENTO -{" "}
+              <Link 
+                to="/contato?acao=parceiro" 
+                className="text-ochre hover:underline font-semibold"
               >
-                {item.name}
+                SEJA NOSSO PARCEIRO
               </Link>
-            ))}
-          </div>
-
-          {/* CTA Button Desktop */}
-          <div className="hidden lg:flex items-center space-x-4">
-            <a href="tel:+551633151010" className="flex items-center space-x-2 text-primary-foreground hover:text-ochre transition-smooth">
-              <Phone size={18} />
-              <span className="font-medium">(16) 3315-1010</span>
-            </a>
-            <Button asChild variant="cta" size="lg">
-              <Link to="/contato">Solicitar Orçamento</Link>
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden text-primary-foreground hover:text-ochre transition-smooth"
-          >
-            {isOpen ? <X size={28} /> : <Menu size={28} />}
-          </button>
-        </div>
-
-        {/* Mobile Menu */}
-        {isOpen && (
-          <div className="lg:hidden pb-6 space-y-2">
-            {navItems.map((item) => (
-              <Link
-                key={item.path}
-                to={item.path}
-                onClick={() => setIsOpen(false)}
-                className={`block px-4 py-3 rounded font-heading font-medium transition-smooth ${
-                  isActive(item.path)
-                    ? "bg-ochre text-primary"
-                    : "text-primary-foreground hover:bg-stone-dark"
-                }`}
+            </p>
+            <p className="text-xs">
+              TRABALHE CONOSCO - Mande seu currículo para{" "}
+              <a 
+                href="mailto:rh@pedreiraserrana.com.br" 
+                className="text-ochre hover:underline"
               >
-                {item.name}
-              </Link>
-            ))}
-            <div className="pt-4 space-y-2">
-              <a
-                href="tel:+551633151010"
-                className="flex items-center justify-center space-x-2 text-primary-foreground py-3"
-              >
-                <Phone size={18} />
-                <span className="font-medium">(16) 3315-1010</span>
+                rh@pedreiraserrana.com.br
               </a>
-              <Button asChild variant="cta" size="lg" className="w-full">
-                <Link to="/contato" onClick={() => setIsOpen(false)}>
-                  Solicitar Orçamento
+            </p>
+          </div>
+        </div>
+      </div>
+
+      {/* Main Navigation */}
+      <nav className="fixed top-[40px] md:top-[32px] left-0 right-0 z-50 bg-primary shadow-strong">
+        <div className="container mx-auto px-4">
+          <div className="flex items-center justify-between h-20">
+            {/* Logo */}
+            <Link to="/" className="flex items-center space-x-3 group">
+              <div className="w-12 h-12 bg-ochre rounded flex items-center justify-center font-heading font-bold text-2xl text-primary transition-smooth group-hover:shadow-glow">
+                PS
+              </div>
+              <div className="hidden md:block">
+                <div className="font-heading font-bold text-xl text-primary-foreground">
+                  Pedreira Serrana
+                </div>
+                <div className="text-xs text-ochre uppercase tracking-wider">
+                  Desde 1978
+                </div>
+              </div>
+            </Link>
+
+            {/* Desktop Navigation */}
+            <div className="hidden lg:flex items-center space-x-1">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  className={`px-3 py-2 rounded font-heading font-medium text-xs xl:text-sm transition-smooth ${
+                    isActive(item.path)
+                      ? "bg-ochre text-primary"
+                      : "text-primary-foreground hover:bg-stone-dark hover:text-ochre"
+                  }`}
+                >
+                  {item.name}
                 </Link>
+              ))}
+            </div>
+
+            {/* CTA Button Desktop */}
+            <div className="hidden lg:flex items-center space-x-4">
+              <a href="tel:+551639879500" className="flex items-center space-x-2 text-primary-foreground hover:text-ochre transition-smooth">
+                <Phone size={18} />
+                <span className="font-medium text-sm">(16) 3987-9500</span>
+              </a>
+              <Button asChild variant="cta" size="lg">
+                <Link to="/contato">Solicitar Orçamento</Link>
               </Button>
             </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="lg:hidden text-primary-foreground hover:text-ochre transition-smooth"
+            >
+              {isOpen ? <X size={28} /> : <Menu size={28} />}
+            </button>
           </div>
-        )}
-      </div>
-    </nav>
+
+          {/* Mobile Menu */}
+          {isOpen && (
+            <div className="lg:hidden pb-6 space-y-2">
+              {navItems.map((item) => (
+                <Link
+                  key={item.path}
+                  to={item.path}
+                  onClick={() => setIsOpen(false)}
+                  className={`block px-4 py-3 rounded font-heading font-medium transition-smooth ${
+                    isActive(item.path)
+                      ? "bg-ochre text-primary"
+                      : "text-primary-foreground hover:bg-stone-dark"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              ))}
+              <div className="pt-4 space-y-2">
+                <a
+                  href="tel:+551639879500"
+                  className="flex items-center justify-center space-x-2 text-primary-foreground py-3"
+                >
+                  <Phone size={18} />
+                  <span className="font-medium">(16) 3987-9500</span>
+                </a>
+                <Button asChild variant="cta" size="lg" className="w-full">
+                  <Link to="/contato" onClick={() => setIsOpen(false)}>
+                    Solicitar Orçamento
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          )}
+        </div>
+      </nav>
+    </>
   );
 };
 

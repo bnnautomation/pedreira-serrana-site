@@ -14,22 +14,22 @@ import portfolioImg from "@/assets/portfolio-construction.jpg";
 const Home = () => {
   const products = [
     {
-      image: britaImg,
-      title: "Brita Graduada",
-      description: "Agregado graúdo de basalto britado, ideal para concreto e pavimentação.",
-      specs: ["Brita 1: 19mm", "Brita 2: 32mm", "Alta resistência"],
-    },
-    {
       image: pedriscoImg,
-      title: "Pedrisco",
-      description: "Agregado miúdo para acabamentos e concretos especiais.",
-      specs: ["Granulometria 4-9mm", "Uso versátil", "Qualidade superior"],
+      title: "Pedra 5/8 (Pedrisco)",
+      description: "Agregado miúdo para acabamentos, argamassas e concretos com baixa espessura.",
+      specs: ["Granulometria 4-9mm", "Acabamentos", "Compactação"],
     },
     {
-      image: poBasaltoImg,
-      title: "Pó de Basalto",
-      description: "Material fino para remineralização de solos e preenchimento.",
-      specs: ["Alta pureza", "Aplicação agrícola", "Sustentável"],
+      image: britaImg,
+      title: "Brita 1/2",
+      description: "Agregado graúdo ideal para fabricação de concreto estrutural e pavimentação.",
+      specs: ["Brita 1: 19mm", "Alta resistência", "Uso em concreto"],
+    },
+    {
+      image: britaImg,
+      title: "Rachão Classificado",
+      description: "Pedra de grande dimensão para enrocamento, gabiões e obras de contenção.",
+      specs: ["Blocos grandes", "Contenções", "Obras especiais"],
     },
   ];
 
@@ -60,6 +60,76 @@ const Home = () => {
     <div className="min-h-screen">
       <Navbar />
       <Hero />
+
+      {/* Welcome Message */}
+      <section className="py-12 bg-ochre/10">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="text-lg md:text-xl">
+              <span className="font-heading font-bold text-2xl md:text-3xl block mb-3 text-primary">
+                Navegue e conheça-nos
+              </span>
+              <span className="text-muted-foreground">
+                Bem-vindo ao site da Pedreira Serrana,<br className="hidden md:block" />
+                totalmente reformulado para melhor atendê-lo!
+              </span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Certificates Section */}
+      <section className="py-16 bg-background border-b">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="text-center text-2xl font-heading font-bold mb-8">
+              Certificações e Parcerias
+            </h2>
+            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
+              <a
+                href="http://www.dnpm.gov.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
+              >
+                <div className="w-24 h-24 bg-stone-100 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-xs font-heading font-bold text-center text-stone-600">
+                    DNPM<br />Certificado
+                  </span>
+                </div>
+                <span className="text-sm text-muted-foreground">
+                  Departamento Nacional<br />de Produção Mineral
+                </span>
+              </a>
+              <a
+                href="http://www.conservation.org.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
+              >
+                <div className="w-24 h-24 bg-green-50 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-xs font-heading font-bold text-center text-green-700">
+                    Conservation<br />International
+                  </span>
+                </div>
+                <span className="text-sm text-muted-foreground">
+                  Compromisso com<br />Sustentabilidade
+                </span>
+              </a>
+              <div className="bg-card p-6 rounded-lg shadow-card flex flex-col items-center">
+                <div className="w-24 h-24 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
+                  <span className="text-lg font-heading font-bold text-ochre">
+                    INMETRO
+                  </span>
+                </div>
+                <span className="text-sm text-muted-foreground">
+                  Balança Certificada<br />Venda a Peso
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Produtos em Destaque */}
       <section className="py-20 bg-background">
@@ -236,7 +306,7 @@ const Home = () => {
               </Link>
             </Button>
             <Button asChild variant="outline" size="xl" className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-primary">
-              <a href="tel:+551633151010">(16) 3315-1010</a>
+              <a href="tel:+551639879500">(16) 3987-9500</a>
             </Button>
           </div>
         </div>

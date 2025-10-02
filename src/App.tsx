@@ -9,6 +9,7 @@ import Products from "./pages/Products";
 import Process from "./pages/Process";
 import WeightSales from "./pages/WeightSales";
 import Portfolio from "./pages/Portfolio";
+import Location from "./pages/Location";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 
@@ -27,6 +28,7 @@ const App = () => (
           <Route path="/processo" element={<Process />} />
           <Route path="/venda-peso" element={<WeightSales />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/localizacao" element={<Location />} />
           <Route path="/contato" element={<Contact />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
