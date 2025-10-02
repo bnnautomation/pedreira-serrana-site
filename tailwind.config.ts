@@ -13,7 +13,20 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        heading: ['Montserrat', 'sans-serif'],
+        body: ['Roboto', 'sans-serif'],
+      },
       colors: {
+        stone: {
+          dark: 'hsl(var(--stone-dark))',
+          medium: 'hsl(var(--stone-medium))',
+          light: 'hsl(var(--stone-light))',
+        },
+        ochre: {
+          DEFAULT: 'hsl(var(--ochre))',
+          dark: 'hsl(var(--ochre-dark))',
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
