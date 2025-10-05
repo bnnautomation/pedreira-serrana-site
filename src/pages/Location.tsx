@@ -53,7 +53,7 @@ const Location = () => {
                   className="w-full md:w-auto"
                 >
                   <a
-                    href="https://maps.google.com/?q=-21.196206,-47.581789"
+                    href="https://www.google.com/maps/place/Pedreira+Serrana+Ltda/@-21.1967772,-47.5912509,17z/data=!3m1!4b1!4m6!3m5!1s0x94b9dab4eab2b485:0x86f454303688adbe!8m2!3d-21.1967773!4d-47.58638!16s%2Fg%2F11b6hp0217?entry=ttu&g_ep=EgoyMDI1MTAwMS4wIKXMDSoASAFQAw%3D%3D"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
