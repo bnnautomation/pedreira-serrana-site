@@ -53,7 +53,7 @@ const Location = () => {
                   className="w-full md:w-auto"
                 >
                   <a
-                    href="https://www.google.com.br/maps?q=-21.196206,-47.581789"
+                    href="https://maps.google.com/?q=-21.196206,-47.581789"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
