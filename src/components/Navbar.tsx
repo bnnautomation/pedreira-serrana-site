@@ -53,12 +53,18 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center group">
-              <img
-                src="/logo.svg"
-                alt="Pedreira Serrana"
-                className="h-16 w-auto transition-smooth group-hover:opacity-80"
-              />
+            <Link to="/" className="flex items-center space-x-3 group">
+              <div className="w-12 h-12 bg-ochre rounded flex items-center justify-center font-heading font-bold text-2xl text-primary transition-smooth group-hover:shadow-glow">
+                PS
+              </div>
+              <div className="hidden md:block">
+                <div className="font-heading font-bold text-xl text-primary-foreground">
+                  Pedreira Serrana
+                </div>
+                <div className="text-xs text-ochre uppercase tracking-wider">
+                  Desde 1978
+                </div>
+              </div>
             </Link>
 
             {/* Desktop Navigation */}
