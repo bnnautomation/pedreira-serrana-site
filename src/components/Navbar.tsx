@@ -25,17 +25,17 @@ const Navbar = () => {
       {/* Top Bar */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-stone-900 text-white py-2 text-xs md:text-sm">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
-            <p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-1 md:gap-2 text-center md:text-left">
+            <p className="text-[10px] md:text-xs lg:text-sm leading-tight">
               PEDREIRA SERRANA | HÁ 47 ANOS TRABALHANDO PELO DESENVOLVIMENTO -{" "}
               <Link 
                 to="/contato?acao=parceiro" 
-                className="text-ochre hover:underline font-semibold"
+                className="text-ochre hover:underline font-semibold whitespace-nowrap"
               >
                 SEJA NOSSO PARCEIRO
               </Link>
             </p>
-            <p className="text-xs">
+            <p className="text-[10px] md:text-xs leading-tight whitespace-nowrap">
               TRABALHE CONOSCO - Mande seu currículo para{" "}
               <a 
                 href="mailto:rh@pedreiraserrana.com.br" 
