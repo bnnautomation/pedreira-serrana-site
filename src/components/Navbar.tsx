@@ -23,23 +23,25 @@ const Navbar = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-stone-900 text-white py-2 text-xs md:text-sm">
+      <div className="fixed top-0 left-0 right-0 z-50 bg-stone-900 text-white py-3 text-xs">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-1 md:gap-2 text-center md:text-left">
-            <p className="text-[10px] md:text-xs lg:text-sm leading-tight">
-              PEDREIRA SERRANA | HÁ 47 ANOS TRABALHANDO PELO DESENVOLVIMENTO -{" "}
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-2 text-center lg:text-left">
+            <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
+              <span className="text-[11px] sm:text-xs">
+                PEDREIRA SERRANA | HÁ 47 ANOS TRABALHANDO PELO DESENVOLVIMENTO
+              </span>
               <Link 
                 to="/contato?acao=parceiro" 
-                className="text-ochre hover:underline font-semibold whitespace-nowrap"
+                className="text-ochre hover:underline font-semibold text-xs sm:text-sm px-3 py-1 bg-ochre/10 rounded hover:bg-ochre/20 transition-smooth whitespace-nowrap"
               >
                 SEJA NOSSO PARCEIRO
               </Link>
-            </p>
-            <p className="text-[10px] md:text-xs leading-tight whitespace-nowrap">
-              TRABALHE CONOSCO - Mande seu currículo para{" "}
+            </div>
+            <p className="text-[11px] sm:text-xs">
+              TRABALHE CONOSCO - Envie seu currículo:{" "}
               <a 
                 href="mailto:rh@pedreiraserrana.com.br" 
-                className="text-ochre hover:underline"
+                className="text-ochre hover:underline font-semibold"
               >
                 rh@pedreiraserrana.com.br
               </a>
@@ -49,7 +51,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="fixed top-[40px] md:top-[32px] left-0 right-0 z-50 bg-primary shadow-strong">
+      <nav className="fixed top-[64px] left-0 right-0 z-50 bg-primary shadow-strong">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
