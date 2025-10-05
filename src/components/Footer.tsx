@@ -14,6 +14,7 @@ const Footer = () => {
     { name: "PORTFÓLIO", path: "/portfolio" },
     { name: "LOCALIZAÇÃO", path: "/localizacao" },
     { name: "CONTATO", path: "/contato" },
+    { name: "TRABALHE CONOSCO", path: "/carreiras" },
   ];
 
   return (

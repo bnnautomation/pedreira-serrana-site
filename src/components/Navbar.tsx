@@ -25,27 +25,16 @@ const Navbar = () => {
       {/* Top Bar */}
       <div className="fixed top-0 left-0 right-0 z-50 bg-stone-900 text-white py-3 text-xs">
         <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row justify-between items-center gap-2 text-center lg:text-left">
-            <div className="flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
-              <span className="text-[11px] sm:text-xs">
-                PEDREIRA SERRANA | HÁ 47 ANOS TRABALHANDO PELO DESENVOLVIMENTO
-              </span>
-              <Link 
-                to="/contato?acao=parceiro" 
-                className="text-ochre hover:underline font-semibold text-xs sm:text-sm px-3 py-1 bg-ochre/10 rounded hover:bg-ochre/20 transition-smooth whitespace-nowrap"
-              >
-                SEJA NOSSO PARCEIRO
-              </Link>
-            </div>
-            <p className="text-[11px] sm:text-xs">
-              TRABALHE CONOSCO - Envie seu currículo:{" "}
-              <a 
-                href="mailto:rh@pedreiraserrana.com.br" 
-                className="text-ochre hover:underline font-semibold"
-              >
-                rh@pedreiraserrana.com.br
-              </a>
-            </p>
+          <div className="flex flex-col sm:flex-row justify-center items-center gap-2 text-center">
+            <span className="text-[11px] sm:text-xs">
+              PEDREIRA SERRANA | HÁ 47 ANOS TRABALHANDO PELO DESENVOLVIMENTO
+            </span>
+            <Link 
+              to="/contato?acao=parceiro" 
+              className="text-ochre hover:underline font-semibold text-xs sm:text-sm px-3 py-1 bg-ochre/10 rounded hover:bg-ochre/20 transition-smooth whitespace-nowrap"
+            >
+              SEJA NOSSO PARCEIRO
+            </Link>
           </div>
         </div>
       </div>
