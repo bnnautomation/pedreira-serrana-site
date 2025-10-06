@@ -21,9 +21,9 @@ const Navbar = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <>
+    <div className="fixed top-0 left-0 right-0 z-50">
       {/* Top Bar */}
-      <div className="fixed top-0 left-0 right-0 z-50 bg-stone-900 text-white py-3 text-xs">
+      <div className="bg-stone-900 text-white py-3 text-xs">
         <div className="container mx-auto px-4">
           <div className="flex flex-col sm:flex-row justify-center items-center gap-2 text-center">
             <span className="text-[11px] sm:text-xs">
@@ -40,7 +40,7 @@ const Navbar = () => {
       </div>
 
       {/* Main Navigation */}
-      <nav className="fixed top-[64px] left-0 right-0 z-50 bg-primary shadow-strong">
+      <nav className="bg-primary shadow-strong">
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
@@ -130,7 +130,7 @@ const Navbar = () => {
           )}
         </div>
       </nav>
-    </>
+    </div>
   );
 };
 
