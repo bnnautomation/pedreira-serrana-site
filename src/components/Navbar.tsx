@@ -54,11 +54,6 @@ const Navbar = () => {
                   filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))'
                 }}
               />
-              <div className="hidden md:block ml-3">
-                <div className="text-xs text-ochre uppercase tracking-wider">
-                  Desde 1978
-                </div>
-              </div>
             </Link>
 
             {/* Desktop Navigation */}

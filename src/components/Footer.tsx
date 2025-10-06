@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { MapPin, Phone, Mail } from "lucide-react";
+import logoSerrana from "@/assets/logo-pedreira-serrana.jpg";
 
 const Footer = () => {
   const sitemapColumn1 = [
@@ -104,9 +105,16 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start">
             <Link 
               to="/"
-              className="text-3xl font-heading font-bold text-ochre mb-4 hover:opacity-80 transition-opacity"
+              className="mb-4 group"
             >
-              PEDREIRA SERRANA
+              <img 
+                src={logoSerrana} 
+                alt="Pedreira Serrana Logo" 
+                className="h-16 w-auto object-contain rounded-lg transition-smooth group-hover:scale-105"
+                style={{ 
+                  filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3))'
+                }}
+              />
             </Link>
             <p className="text-stone-300 text-sm text-center md:text-left mb-6">
               47 anos de experiência em extração, britagem e comercialização de
