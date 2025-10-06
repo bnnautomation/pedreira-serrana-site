@@ -49,7 +49,7 @@ const Navbar = () => {
               <img 
                 src={logoSerrana} 
                 alt="Pedreira Serrana Logo" 
-                className="h-14 w-auto object-contain transition-smooth group-hover:scale-105"
+                className="h-14 w-auto object-contain rounded-lg transition-smooth group-hover:scale-105"
                 style={{ 
                   filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))'
                 }}
