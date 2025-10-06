@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logoSerrana from "@/assets/logo-pedreira-serrana.jpg";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -44,14 +45,17 @@ const Navbar = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <Link to="/" className="flex items-center space-x-3 group">
-              <div className="w-12 h-12 bg-ochre rounded flex items-center justify-center font-heading font-bold text-2xl text-primary transition-smooth group-hover:shadow-glow">
-                PS
-              </div>
-              <div className="hidden md:block">
-                <div className="font-heading font-bold text-xl text-primary-foreground">
-                  Pedreira Serrana
-                </div>
+            <Link to="/" className="flex items-center group">
+              <img 
+                src={logoSerrana} 
+                alt="Pedreira Serrana Logo" 
+                className="h-14 w-auto object-contain transition-smooth group-hover:scale-105"
+                style={{ 
+                  filter: 'drop-shadow(0 2px 8px rgba(0, 0, 0, 0.1))',
+                  mixBlendMode: 'multiply'
+                }}
+              />
+              <div className="hidden md:block ml-3">
                 <div className="text-xs text-ochre uppercase tracking-wider">
                   Desde 1978
                 </div>
