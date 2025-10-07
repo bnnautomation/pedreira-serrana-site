@@ -12,7 +12,7 @@ import miningImg from "@/assets/mining-process.jpg";
 import portfolioImg from "@/assets/portfolio-construction.jpg";
 import logoConservation from "@/assets/logo-conservation-international.png";
 import logoDnpm from "@/assets/logo-dnpm-home.png";
-import logoInmetro from "@/assets/logo-inmetro.jpeg";
+import logoInmetro from "@/assets/logo-inmetro-vertical.png";
 
 const Home = () => {
   const products = [
