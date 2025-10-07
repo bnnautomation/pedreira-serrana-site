@@ -11,6 +11,7 @@ import poBasaltoImg from "@/assets/product-po-basalto.jpg";
 import miningImg from "@/assets/mining-process.jpg";
 import portfolioImg from "@/assets/portfolio-construction.jpg";
 import logoConservation from "@/assets/logo-conservation-international.png";
+import logoDnpm from "@/assets/logo-dnpm-home.png";
 
 const Home = () => {
   const products = [
@@ -94,9 +95,11 @@ const Home = () => {
                 className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
               >
                 <div className="w-24 h-24 bg-stone-100 rounded-lg flex items-center justify-center mb-3">
-                  <span className="text-xs font-heading font-bold text-center text-stone-600">
-                    DNPM<br />Certificado
-                  </span>
+                  <img 
+                    src={logoDnpm} 
+                    alt="DNPM Certificado" 
+                    className="w-20 h-auto object-contain"
+                  />
                 </div>
                 <span className="text-sm text-muted-foreground">
                   Departamento Nacional<br />de Produção Mineral
