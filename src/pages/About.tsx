@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Target, Eye, Heart, Award } from "lucide-react";
 import miningImg from "@/assets/mining-process.jpg";
+import logoDnpm from "@/assets/logo-dnpm.png";
 
 const About = () => {
   const timeline = [
@@ -186,6 +187,13 @@ const About = () => {
               rigorosos protocolos de segurança do trabalho.
             </p>
             <div className="flex flex-wrap justify-center gap-4">
+              <div className="bg-card px-6 py-3 rounded-full shadow-card">
+                <img 
+                  src={logoDnpm} 
+                  alt="DNPM Certificado" 
+                  className="h-8 w-auto object-contain"
+                />
+              </div>
               <div className="bg-card px-6 py-3 rounded-full shadow-card">
                 <span className="font-heading font-semibold">INMETRO Certificado</span>
               </div>
