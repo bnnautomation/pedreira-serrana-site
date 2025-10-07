@@ -12,6 +12,7 @@ import miningImg from "@/assets/mining-process.jpg";
 import portfolioImg from "@/assets/portfolio-construction.jpg";
 import logoConservation from "@/assets/logo-conservation-international.png";
 import logoDnpm from "@/assets/logo-dnpm-home.png";
+import logoInmetro from "@/assets/logo-inmetro.jpeg";
 
 const Home = () => {
   const products = [
@@ -124,9 +125,11 @@ const Home = () => {
               </a>
               <div className="bg-card p-6 rounded-lg shadow-card flex flex-col items-center">
                 <div className="w-24 h-24 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
-                  <span className="text-lg font-heading font-bold text-ochre">
-                    INMETRO
-                  </span>
+                  <img 
+                    src={logoInmetro} 
+                    alt="INMETRO" 
+                    className="w-20 h-auto object-contain"
+                  />
                 </div>
                 <span className="text-sm text-muted-foreground">
                   Balança Certificada<br />Venda a Peso
