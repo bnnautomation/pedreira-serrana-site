@@ -10,6 +10,7 @@ import pedriscoImg from "@/assets/product-pedrisco.jpg";
 import poBasaltoImg from "@/assets/product-po-basalto.jpg";
 import miningImg from "@/assets/mining-process.jpg";
 import portfolioImg from "@/assets/portfolio-construction.jpg";
+import logoConservation from "@/assets/logo-conservation-international.png";
 
 const Home = () => {
   const products = [
@@ -108,9 +109,11 @@ const Home = () => {
                 className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
               >
                 <div className="w-24 h-24 bg-green-50 rounded-lg flex items-center justify-center mb-3">
-                  <span className="text-xs font-heading font-bold text-center text-green-700">
-                    Conservation<br />International
-                  </span>
+                  <img 
+                    src={logoConservation} 
+                    alt="Conservation International" 
+                    className="w-20 h-auto object-contain"
+                  />
                 </div>
                 <span className="text-sm text-muted-foreground">
                   Compromisso com<br />Sustentabilidade
