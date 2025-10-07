@@ -20,7 +20,7 @@ const Hero = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10 pt-44 md:pt-40 pb-20">
-        <div className="max-w-3xl">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="inline-block mb-6 px-4 py-2 bg-ochre/20 backdrop-blur-sm border border-ochre rounded-full">
             <span className="text-ochre font-heading font-semibold text-sm uppercase tracking-wider">
               Desde 1978 • 47 Anos de Excelência
@@ -31,12 +31,12 @@ const Hero = () => {
             Materiais Robustos para Construir o Futuro
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-300 mb-8 font-light">
+          <p className="text-xl md:text-2xl text-gray-300 mb-8 font-light max-w-3xl mx-auto">
             Extração, britagem e comercialização de basalto de alta qualidade em Serrana/SP. 
             Pioneiros em venda a peso certificada INMETRO.
           </p>
           
-          <div className="flex flex-col sm:flex-row gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row gap-4 mb-16 justify-center">
             <Button asChild variant="hero" size="xl">
               <Link to="/contato">
                 Solicitar Orçamento
@@ -49,13 +49,13 @@ const Hero = () => {
           </div>
 
           {/* Stats */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="flex items-start space-x-3 bg-black/40 backdrop-blur-sm p-4 rounded-lg border border-stone-medium/30">
-              <div className="w-12 h-12 bg-ochre/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Scale className="text-ochre" size={24} />
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="flex flex-col items-center text-center space-y-3 bg-black/40 backdrop-blur-sm p-6 rounded-lg border border-stone-medium/30 hover:bg-black/50 transition-all">
+              <div className="w-16 h-16 bg-ochre/20 rounded-lg flex items-center justify-center">
+                <Scale className="text-ochre" size={28} />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-lg text-primary-foreground mb-1">
+                <h3 className="font-heading font-bold text-xl text-primary-foreground mb-1">
                   Venda a Peso
                 </h3>
                 <p className="text-sm text-gray-400">
@@ -64,12 +64,12 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-3 bg-black/40 backdrop-blur-sm p-4 rounded-lg border border-stone-medium/30">
-              <div className="w-12 h-12 bg-ochre/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Award className="text-ochre" size={24} />
+            <div className="flex flex-col items-center text-center space-y-3 bg-black/40 backdrop-blur-sm p-6 rounded-lg border border-stone-medium/30 hover:bg-black/50 transition-all">
+              <div className="w-16 h-16 bg-ochre/20 rounded-lg flex items-center justify-center">
+                <Award className="text-ochre" size={28} />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-lg text-primary-foreground mb-1">
+                <h3 className="font-heading font-bold text-xl text-primary-foreground mb-1">
                   47 Anos
                 </h3>
                 <p className="text-sm text-gray-400">
@@ -78,12 +78,12 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="flex items-start space-x-3 bg-black/40 backdrop-blur-sm p-4 rounded-lg border border-stone-medium/30">
-              <div className="w-12 h-12 bg-ochre/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                <Leaf className="text-ochre" size={24} />
+            <div className="flex flex-col items-center text-center space-y-3 bg-black/40 backdrop-blur-sm p-6 rounded-lg border border-stone-medium/30 hover:bg-black/50 transition-all">
+              <div className="w-16 h-16 bg-ochre/20 rounded-lg flex items-center justify-center">
+                <Leaf className="text-ochre" size={28} />
               </div>
               <div>
-                <h3 className="font-heading font-bold text-lg text-primary-foreground mb-1">
+                <h3 className="font-heading font-bold text-xl text-primary-foreground mb-1">
                   Sustentabilidade
                 </h3>
                 <p className="text-sm text-gray-400">

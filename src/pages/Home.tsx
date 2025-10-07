@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import ProductCard from "@/components/ProductCard";
 import Footer from "@/components/Footer";
+import CustomerCarousel from "@/components/CustomerCarousel";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, CheckCircle2, Truck, Shield, Clock } from "lucide-react";
 import { Link } from "react-router-dom";
@@ -13,6 +14,15 @@ import portfolioImg from "@/assets/portfolio-construction.jpg";
 import logoConservation from "@/assets/logo-conservation-international.png";
 import logoDnpm from "@/assets/logo-dnpm-home.png";
 import logoInmetro from "@/assets/logo-inmetro-vertical.png";
+import customerConcrepool from "@/assets/customer-concrepool.png";
+import customerInternationalPaper from "@/assets/customer-international-paper.png";
+import customerJopal from "@/assets/customer-jopal.png";
+import customerJucel from "@/assets/customer-jucel.png";
+import customerMattaraia from "@/assets/customer-mattaraia.png";
+import customerMultiplan from "@/assets/customer-multiplan.png";
+import customerPolimix from "@/assets/customer-polimix.png";
+import customerSemag from "@/assets/customer-semag.png";
+import customerCive from "@/assets/customer-cive.png";
 
 const Home = () => {
   const products = [
@@ -57,6 +67,18 @@ const Home = () => {
       title: "Atendimento Dedicado",
       description: "Equipe especializada para orientar na escolha do produto ideal.",
     },
+  ];
+
+  const customers = [
+    { name: "Concrepool", logo: customerConcrepool },
+    { name: "International Paper", logo: customerInternationalPaper },
+    { name: "Jopal Concreto", logo: customerJopal },
+    { name: "Jucel", logo: customerJucel },
+    { name: "Mattaraia Engenharia", logo: customerMattaraia },
+    { name: "Multiplan", logo: customerMultiplan },
+    { name: "Polimix", logo: customerPolimix },
+    { name: "Semag", logo: customerSemag },
+    { name: "Cive Construtora", logo: customerCive },
   ];
 
   return (
@@ -268,6 +290,26 @@ const Home = () => {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Customer Carousel */}
+      <section className="py-20 bg-muted">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12">
+            <div className="inline-block mb-4 px-4 py-2 bg-ochre/10 rounded-full">
+              <span className="text-ochre font-heading font-semibold text-sm uppercase tracking-wider">
+                Nossos Clientes
+              </span>
+            </div>
+            <h2 className="text-4xl md:text-5xl font-heading font-bold mb-4">
+              Alguns de nossos clientes
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+              Empresas que confiam na qualidade e confiabilidade da Pedreira Serrana
+            </p>
+          </div>
+          <CustomerCarousel customers={customers} />
         </div>
       </section>
 

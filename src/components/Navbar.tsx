@@ -10,13 +10,14 @@ const Navbar = () => {
   
   const navItems = [
     { name: "Home", path: "/" },
-    { name: "Sobre Nós", path: "/sobre" },
-    { name: "Mineração", path: "/processo" },
-    { name: "Venda a Peso", path: "/venda-peso" },
+    { name: "Sobre", path: "/sobre" },
     { name: "Produtos", path: "/produtos" },
+    { name: "Venda a Peso", path: "/venda-peso" },
+    { name: "Mineração", path: "/processo" },
     { name: "Portfólio", path: "/portfolio" },
     { name: "Localização", path: "/localizacao" },
     { name: "Contato", path: "/contato" },
+    { name: "Trabalhe conosco", path: "/carreiras" },
   ];
 
   const isActive = (path: string) => location.pathname === path;
@@ -43,9 +44,9 @@ const Navbar = () => {
       {/* Main Navigation */}
       <nav className="bg-primary shadow-strong">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between h-20">
+          <div className="flex items-center justify-between h-20 gap-8">
             {/* Logo */}
-            <Link to="/" className="flex items-center group">
+            <Link to="/" className="flex items-center group flex-shrink-0">
               <img 
                 src={logoSerrana} 
                 alt="Pedreira Serrana Logo" 
@@ -57,7 +58,7 @@ const Navbar = () => {
             </Link>
 
             {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center space-x-1">
+            <div className="hidden lg:flex items-center space-x-1 flex-1 justify-center">
               {navItems.map((item) => (
                 <Link
                   key={item.path}
@@ -74,7 +75,7 @@ const Navbar = () => {
             </div>
 
             {/* CTA Button Desktop */}
-            <div className="hidden lg:flex items-center space-x-4">
+            <div className="hidden lg:flex items-center space-x-4 flex-shrink-0">
               <a href="tel:+551639879500" className="flex items-center space-x-2 text-primary-foreground hover:text-ochre transition-smooth">
                 <Phone size={18} />
                 <span className="font-medium text-sm">(16) 3987-9500</span>
