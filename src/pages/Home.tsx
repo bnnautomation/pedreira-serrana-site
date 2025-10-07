@@ -64,23 +64,6 @@ const Home = () => {
       <Navbar />
       <Hero />
 
-      {/* Welcome Message */}
-      <section className="py-12 bg-ochre/10">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <p className="text-lg md:text-xl">
-              <span className="font-heading font-bold text-2xl md:text-3xl block mb-3 text-primary">
-                Navegue e conheça-nos
-              </span>
-              <span className="text-muted-foreground">
-                Bem-vindo ao site da Pedreira Serrana,<br className="hidden md:block" />
-                totalmente reformulado para melhor atendê-lo!
-              </span>
-            </p>
-          </div>
-        </div>
-      </section>
-
       {/* Certificates Section */}
       <section className="py-16 bg-background border-b">
         <div className="container mx-auto px-4">
