@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { MapPin, Phone, Mail } from "lucide-react";
+import { MapPin, Phone, Mail, Instagram } from "lucide-react";
 import logoSerrana from "@/assets/logo-pedreira-serrana.jpg";
 
 const Footer = () => {
@@ -90,6 +90,17 @@ const Footer = () => {
                   className="hover:text-ochre transition-colors"
                 >
                   contato@pedreiraserrana.com.br
+                </a>
+              </div>
+              <div className="flex items-center space-x-3">
+                <Instagram className="w-5 h-5 text-ochre flex-shrink-0" />
+                <a
+                  href="https://instagram.com/pedreiraserrana"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:text-ochre transition-colors"
+                >
+                  @pedreiraserrana
                 </a>
               </div>
             </div>

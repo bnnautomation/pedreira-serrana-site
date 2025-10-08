@@ -100,7 +100,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
               >
-                <div className="w-24 h-24 bg-stone-100 rounded-lg flex items-center justify-center mb-3">
+                <div className="w-24 h-24 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
                   <img 
                     src={logoDnpm} 
                     alt="DNPM Certificado" 
@@ -117,7 +117,7 @@ const Home = () => {
                 rel="noopener noreferrer"
                 className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
               >
-                <div className="w-24 h-24 bg-green-50 rounded-lg flex items-center justify-center mb-3">
+                <div className="w-24 h-24 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
                   <img 
                     src={logoConservation} 
                     alt="Conservation International" 
