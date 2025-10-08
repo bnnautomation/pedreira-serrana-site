@@ -86,64 +86,6 @@ const Home = () => {
       <Navbar />
       <Hero />
 
-      {/* Certificates Section */}
-      <section className="py-16 bg-background border-b">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-center text-2xl font-heading font-bold mb-8">
-              Certificações e Parcerias
-            </h2>
-            <div className="flex flex-wrap justify-center items-center gap-8 md:gap-16">
-              <a
-                href="http://www.dnpm.gov.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
-              >
-                <div className="w-24 h-24 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
-                  <img 
-                    src={logoDnpm} 
-                    alt="DNPM Certificado" 
-                    className="w-20 h-auto object-contain"
-                  />
-                </div>
-                <span className="text-sm text-muted-foreground">
-                  Departamento Nacional<br />de Produção Mineral
-                </span>
-              </a>
-              <a
-                href="http://www.conservation.org.br/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
-              >
-                <div className="w-24 h-24 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
-                  <img 
-                    src={logoConservation} 
-                    alt="Conservation International" 
-                    className="w-20 h-auto object-contain"
-                  />
-                </div>
-                <span className="text-sm text-muted-foreground">
-                  Compromisso com<br />Sustentabilidade
-                </span>
-              </a>
-              <div className="bg-card p-6 rounded-lg shadow-card flex flex-col items-center">
-                <div className="w-24 h-24 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
-                  <img 
-                    src={logoInmetro} 
-                    alt="INMETRO" 
-                    className="w-20 h-auto object-contain"
-                  />
-                </div>
-                <span className="text-sm text-muted-foreground">
-                  Balança Certificada<br />Venda a Peso
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Produtos em Destaque */}
       <section className="py-20 bg-background">
@@ -194,7 +136,7 @@ const Home = () => {
             </h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {differentials.map((item, index) => {
               const Icon = item.icon;
               return (
@@ -214,6 +156,60 @@ const Home = () => {
                 </div>
               );
             })}
+          </div>
+
+          <div className="max-w-4xl mx-auto">
+            <h3 className="text-center text-2xl font-heading font-bold mb-8">
+              Certificações e Parcerias
+            </h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <a
+                href="http://www.dnpm.gov.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
+              >
+                <div className="w-20 h-20 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
+                  <img 
+                    src={logoDnpm} 
+                    alt="DNPM Certificado" 
+                    className="w-16 h-auto object-contain"
+                  />
+                </div>
+                <span className="text-sm text-center text-muted-foreground">
+                  Departamento Nacional de Produção Mineral
+                </span>
+              </a>
+              <a
+                href="http://www.conservation.org.br/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-card p-6 rounded-lg shadow-card hover:shadow-strong transition-smooth flex flex-col items-center"
+              >
+                <div className="w-20 h-20 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
+                  <img 
+                    src={logoConservation} 
+                    alt="Conservation International" 
+                    className="w-16 h-auto object-contain"
+                  />
+                </div>
+                <span className="text-sm text-center text-muted-foreground">
+                  Compromisso com Sustentabilidade
+                </span>
+              </a>
+              <div className="bg-card p-6 rounded-lg shadow-card flex flex-col items-center">
+                <div className="w-20 h-20 bg-ochre/20 rounded-lg flex items-center justify-center mb-3">
+                  <img 
+                    src={logoInmetro} 
+                    alt="INMETRO" 
+                    className="w-16 h-auto object-contain"
+                  />
+                </div>
+                <span className="text-sm text-center text-muted-foreground">
+                  Balança Certificada Venda a Peso
+                </span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
